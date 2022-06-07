@@ -977,10 +977,10 @@
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "GreenPepperTopping"
+      "valueCode": "SpicyTopping"
     }, {
       "code": "parent",
-      "valueCode": "SpicyTopping"
+      "valueCode": "GreenPepperTopping"
     }, {
       "code": "root",
       "valueBoolean": false
