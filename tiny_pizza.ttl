@@ -1,0 +1,1389 @@
+@prefix : <http://www.co-ode.org/ontologies/pizza/pizza.owl#> .
+@prefix a: <http://example.org/a#> .
+@prefix g: <http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-13/> .
+@prefix m: <http://ldf.fi/narc-menehtyneet1939-45/> .
+@prefix s: <http://ldf.fi/narc-sotasurmat1918-22/> .
+@prefix cc: <http://web.resource.org/cc/> .
+@prefix cd: <https://travel.detik.com/travel-news/> .
+@prefix cl: <http://purl.obolibrary.org/obo/cl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ex: <http://example.org/> .
+@prefix fm: <http://www.ftsm.ukm.my/ss/famOnt#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions> .
+@prefix fw: <http://www.factweave.com/ontologies/internal#> .
+@prefix go: <http://purl.obolibrary.org/obo/go#> .
+@prefix gr: <http://purl.org/goodrelations/v1> .
+@prefix ms: <http://www.novartis.com/metastore#> .
+@prefix ns: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix po: <http://purl.obolibrary.org/obo/po#> .
+@prefix pz: <http://sw.pizza/#> .
+@prefix ro: <http://www.obofoundry.org/ro/ro.owl#> .
+@prefix s4: <http://schema.sap.com/ns/s4#> .
+@prefix sd: <http://schemas.ogf.org/nsi/2013/12/services/definition#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix sm: <http://www.omg.org/techprocess/ab/SpecificationMetadata/> .
+@prefix td: <https://www.w3.org/2019/wot/td#> .
+@prefix tm: <http://www.w3.org/2006/time#> .
+@prefix v1: <http://purl.org/goodrelations/v1#> .
+@prefix vb: <http://eresources.nlb.gov.sg/ID/NLBDM/vocab/> .
+@prefix vm: <http://www.visual-meaning.com/rdf/HE/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix wv: <http://vocab.org/waive/terms/> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema> .
+@prefix LRU: <http://www.semanticweb.org/simontrussler/ontologies/2021/10/AAV5_rwp#LRU/> .
+@prefix NBN: <http://urn.fi/#> .
+@prefix XML: <http://www.w3.org/XML/1998/> .
+@prefix asn: <http://purl.org/ASN/schema/core/> .
+@prefix bfo: <http://purl.obofoundry.org/obo/> .
+@prefix bom: <http://schema.sap.com/ns/bom#> .
+@prefix bot: <https://w3id.org/bot#> .
+@prefix bpx: <http://schema.sap.com/ns/bpx#> .
+@prefix cbx: <http://cybox.mitre.org/cybox_v1#> .
+@prefix d3f: <http://d3fend.mitre.org/ontologies/d3fend.owl#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dc1: <http://www.semanticweb.org/whg04/ontologies/2021/2/comp6214opendata#dc:> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix esv: <http://eresources.nlb.gov.sg/ID/NLBDM/vocab-esv/> .
+@prefix foo: <http://geneontology.org/foo/> .
+@prefix fwe: <http://www.factweave.com/ontologies/entities#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/> .
+@prefix gss: <http://www.w3.org/2001/11/IsaViz/graphstylesheets#> .
+@prefix ioc: <http://w3id.org/ioc#> .
+@prefix j.0: <http://iec.ch/TC57/2009/CIM-schema-cim14#> .
+@prefix loc: <http://www.loc.gov/loc.terms/relators/> .
+@prefix mak: <http://www.cs.kent.ac.uk/comp6440/makeup/> .
+@prefix mlo: <http://www.a2rd.net.br/mlo#> .
+@prefix net: <http://purl.org/net/> .
+@prefix nml: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ns0: <http://njh.me/www.exemple.org/rdf:> .
+@prefix ns1: <http://eresources.nlb.gov.sg/ID/NLBDM/marcext/> .
+@prefix ns2: <http://bibfra.me/vocab/marc/> .
+@prefix ns3: <http://eresources.nlb.gov.sg/ID/NLBDM/vocab-ccv/> .
+@prefix ns4: <http://bio2rdf.org/bio2rdf_vocabulary:> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix org: <https://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix poi: <http://schema.onki.fi/poi#> .
+@prefix ppn: <http://knowgraphs.eu/usage-conrol-policy-language#> .
+@prefix pse: <http://data.open.ac.uk/ontology/pse#> .
+@prefix pso: <http://purl.org/spar/pso> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem: <http://schema.sap.com/ns/sem#> .
+@prefix sit: <http://schema.sap.com/ns/sit#> .
+@prefix smo: <http://www.semanticweb.org/manufacturingproductionline#> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix tmp: <http://www.semanticweb.org/maria/ontologies/2021/9/running_example#> .
+@prefix ucp: <http://knowgraphs.eu/usage-conrol-policy-language#> .
+@prefix uml: <http://langdale.com.au/2005/UML#> .
+@prefix vin: <http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix www: <http://www.movieontology.org/2009/11/09/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsi: <http://www.w3.org/2001/XMLSchema-instance> .
+@prefix xsp: <http://www.owl-ontologies.com/2005/08/07/xsp.owl#> .
+@prefix AAV4: <http://www.semanticweb.org/simontrussler/ontologies/2021/10/AAV4#> .
+@prefix AAV7: <http://www.semanticweb.org/simontrussler/ontologies/2021/10/AAV7#> .
+@prefix LRU2: <http://www.semanticweb.org/simontrussler/ontologies/2021/10/AAV7#LRU/> .
+@prefix SCTO: <https://bioportal.bioontology.org/ontologies/SCTO#> .
+@prefix acco: <http://purl.org/acco/ns#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix asta: <https://data.digitalarkivet.no/asta/> .
+@prefix base: <http://ti.ukdw.ac.id/tugas4/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cmpo: <http://purl.obolibrary.org/obo/cmpo#> .
+@prefix core: <http://purl.obolibrary.org/obo/uberon/core#> .
+@prefix daml: <http://www.daml.org/2001/03/daml+oil#> .
+@prefix disa: <http://interlink.soliel.local/disa/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix duck: <http://www.semanticweb.org/rasmusrosenkvist/ontologies/duck#> .
+@prefix ecrm: <http://erlangen-crm.org/current/> .
+@prefix envo: <http://purl.obolibrary.org/obo/envo#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix food: <http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#> .
+@prefix gemq: <http://purl.org/gem/qualifiers/> .
+@prefix gold: <http://purl.org/linguistics/gold/> .
+@prefix gtnc: <http://schema.sap.com/ns/gtnc#> .
+@prefix hssn: <http://spider.sigappfr.org/HSSNdoc/hssn.ttl#> .
+@prefix ispv: <http://www.airbus.com/ontology/IS_Product_Variability#> .
+@prefix iswc: <http://annotation.semanticweb.org/iswc/iswc.daml#> .
+@prefix item: <http://www.socialml.org/ontologies/items#> .
+@prefix koko: <http://www.yso.fi/onto/koko/> .
+@prefix lego: <http://spatialai.org/lego/core/v1#> .
+@prefix meso: <http://i-lab.aegean.gr/kotis/Ontologies/Meso/Meso.owl#> .
+@prefix mlo1: <http://www.a2rd.net.br/mlo#mlo:> .
+@prefix mlo2: <http://www.semanticweb.org/user/ontologies/2020/0/ml-ontology#mlo:> .
+@prefix moto: <http://detik.com/motogpmandalika#> .
+@prefix mssn: <http://mssn.sigappfr.org/mssn#> .
+@prefix obda: <https://w3id.org/obda/vocabulary#> .
+@prefix obo1: <http://www.geneontology.org/formats/oboInOwl#http://purl.obolibrary.org/obo/> .
+@prefix obo2: <http://purl.obolibrary.org/obo#> .
+@prefix onto: <http://mydomain.org/ontology/> .
+@prefix osdu: <https://w3id.org/osdu#> .
+@prefix pato: <http://purl.obolibrary.org/obo/pato#> .
+@prefix ppnv: <http://knowgraphs.eu/usage-conrol-policy-language-vocabulary#> .
+@prefix prop: <http://agency.org/porp#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix purl: <http://purl.obofoundry.org/> .
+@prefix rbox: <http://eadp.kg.local/ns/eadp/Relationships/rbox#> .
+@prefix rdf2: <http://www.semanticweb.org/whg04/ontologies/2021/2/comp6214opendata#rdf:> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rest: <http://www.semanticweb.org/polin/ontologies/2022/3/restaurant> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix siri: <http://www.siri.org.uk/siri> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix ucpv: <http://knowgraphs.eu/usage-conrol-policy-language-vocabulary#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix wiki: <https://www.wikidata.org/wiki/> .
+@prefix admin: <http://webns.net/mvcb/> .
+@prefix aiiso: <http://purl.org/vocab/aiiso/schema#> .
+@prefix betty: <https://data.digitalarkivet.no/betty/> .
+@prefix chebi: <http://purl.obolibrary.org/obo/chebi/> .
+@prefix class: <http://agency.org/class#> .
+@prefix count: <http://www.socialml.org/ontologies/count#> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix fiori: <http://schema.sap.com/ns/fiori#> .
+@prefix fwcon: <http://www.factweave.com/ontologies/continuum#> .
+@prefix fwgeo: <http://www.factweave.com/ontologies/geospatial#> .
+@prefix fwreg: <http://www.factweave.com/ontologies/registry#> .
+@prefix fwrel: <http://www.factweave.com/ontologies/relation#> .
+@prefix fwsoc: <http://www.factweave.com/ontologies/social#> .
+@prefix gdelt: <http://www.knowledgesmarts.com/ontologies/gdelt#> .
+@prefix gold1: <http://linguistics-ontology.org/gold/2010/> .
+@prefix grddl: <http://www.w3.org/2003/g/data-view#> .
+@prefix iswww: <http://sw.edu/#> .
+@prefix kulsa: <http://kulttuurisampo.fi/annotaatio#> .
+@prefix nlbdm: <http://eresources.nlb.gov.sg/ID/NLBDM/vocab/> .
+@prefix pizza: <http://www.co-ode.org/ontologies/pizza/pizza.owl#> .
+@prefix pstcn: <http://burningbird.net/postcon/elements/1.0/> .
+@prefix saha3: <http://seco.tkk.fi/saha3/> .
+@prefix saref: <https://saref.etsi.org/core/> .
+@prefix swrla: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix EALink: <http://eadp.kg.local/ns/eadp/Relationships/EALink#> .
+@prefix PLCore: <http://www.perpetuallabs.io/ontologies/2021/9/PLCore#> .
+@prefix Server: <urn:absolute:Server#> .
+@prefix System: <http://interlink.soliel.local/entity/System#> .
+@prefix TypeQL: <http://www.perpetuallabs.io/ontologies/2021/9/TypeQL#> .
+@prefix biopax: <http://www.biopax.org/release/biopax-level2.owl#> .
+@prefix camera: <http://www.xfront.com/owl/ontologies/camera/#> .
+@prefix chebi1: <http://purl.obolibrary.org/obo/chebi#2> .
+@prefix chebi2: <http://purl.obolibrary.org/obo/chebi#3> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix family: <http://www.workingontologist.org/Examples/Chapter6/Family#> .
+@prefix fwdesc: <http://www.factweave.com/ontologies/description#> .
+@prefix lcc-cr: <https://www.omg.org/spec/LCC/Countries/CountryRepresentation/> .
+@prefix lcc-lr: <https://www.omg.org/spec/LCC/Languages/LanguageRepresentation/> .
+@prefix nobias: <http://nobias-project.eu/vocab/> .
+@prefix oboRel: <http://www.obofoundry.org/ro/ro.owl#> .
+@prefix plants: <http://www.linkeddatatools.com/plants#> .
+@prefix schema: <https://schema.org/> .
+@prefix travel: <http://www.owl-ontologies.com/travel.owl#> .
+@prefix uaBase: <http://wzl.rwth-aachen.de/mlr/ontologien/opcua.owl#> .
+@prefix EAPlane: <http://interlink.soliel.local/entity/EAPlane#> .
+@prefix MICAP_B: <http://www.semanticweb.org/simontrussler/ontologies/2021/10/AAV5_rwp#MICAP_B/> .
+@prefix OBO_REL: <http://purl.org/obo/owl/OBO_REL#> .
+@prefix Service: <http://interlink.soliel.local/entity/Service#> .
+@prefix agrovoc: <http://aims.fao.org/aos/agrovoc/> .
+@prefix catalog: <https://data.digitalarkivet.no/betty/catalog/> .
+@prefix cheminf: <http://semanticscience.org/ontology/cheminf.owl#> .
+@prefix current: <http://erlangen-crm.org/current/> .
+@prefix dbpedia: <http://dbpedia.org/cosmetics/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eaLinks: <http://interlink.soliel.local/Relationships/EALink#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix example: <http://www.ics.forth.gr/example#> .
+@prefix formats: <http://www.w3.org/ns/formats/> .
+@prefix fwplace: <http://www.factweave.com/ontologies/place#> .
+@prefix hasShop: <http://www.semanticweb.org/simontrussler/ontologies/2021/10/AAV5_rwp#hasShop/> .
+@prefix ontokin: <http://www.theworldavatar.com/kb/ontokin/ontokin.owl#> .
+@prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
+@prefix owl2xml: <http://www.w3.org/2006/12/owl2-xml#> .
+@prefix protege: <http://protege.stanford.edu/plugins/owl/protege#> .
+@prefix s_lahde: <http://ldf.fi/narc-sotasurmat1918-22/lahde/> .
+@prefix s_lisat: <http://ldf.fi/narc-sotasurmat1918-22/lisatieto/> .
+@prefix subsets: <http://purl.obolibrary.org/obo/ro/subsets#> .
+@prefix syncoin: <http://www.factweave.com/ontologies/syncoin#> .
+@prefix taxslim: <http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim#> .
+@prefix uniprot: <http://purl.uniprot.org/core/> .
+@prefix unnamed: <http://www.owl-ontologies.com/unnamed.owl#> .
+@prefix youtube: <http://www.knowledgesmarts.com/ontologies/youtube#> .
+@prefix AAV5_rwp: <http://www.semanticweb.org/simontrussler/ontologies/2021/10/AAV5_rwp#> .
+@prefix EAEntity: <http://interlink.soliel.local/entity/EAEntity#> .
+@prefix MICAP_B3: <http://www.semanticweb.org/simontrussler/ontologies/2021/10/AAV7#MICAP_B/> .
+@prefix Property: <https://www.wikidata.org/wiki/Property:> .
+@prefix Strategy: <http://eadp.KG.local/eadp/strategy#> .
+@prefix bevaring: <https://data.digitalarkivet.no/betty/bevaring/> .
+@prefix biomanta: <http://biomanta.sourceforge.net/2007/07/biomanta_extension_02.owl#> .
+@prefix capLinks: <http://interlink.soliel.local/Relationships/EALink/CapabilityLinks#> .
+@prefix elements: <https://data.digitalarkivet.no/elements/> .
+@prefix facultad: <http://www.semanticweb.org/marcos/ontologies/2022/4/facultad#> .
+@prefix iottrust: <http://i-lab.aegean.gr/kotis/Ontologies/IoT/IoT-trust-onto.owl#> .
+@prefix l_schema: <http://ldf.fi/schema/narc-luovutetut1939-55/> .
+@prefix m_schema: <http://ldf.fi/schema/narc-menehtyneet1939-45/> .
+@prefix mappings: <http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#> .
+@prefix metadata: <http://data.bioontology.org/metadata/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix omalwm2m: <https://iotsolidugent.inrupt.net/public/ontologies/omalwm2m.owl.ttl#> .
+@prefix ontology: <http://dbpedia.org/ontology/> .
+@prefix otherOnt: <http://example.org/otherOntologies/families/> .
+@prefix patterns: <http://www.co-ode.org/patterns#> .
+@prefix resource: <http://agency.org/class/resource#> .
+@prefix s_schema: <http://ldf.fi/schema/narc-sotasurmat1918-22/> .
+@prefix sdm-core: <http://schema.sap.com/ns/sdm-core#> .
+@prefix srvLinks: <http://interlink.soliel.local/Relationships/EALink/ServiceLinks#> .
+@prefix sysLinks: <http://interlink.soliel.local/Relationships/EALink/SystemLinks#> .
+@prefix void-ext: <http://ldf.fi/void-ext#> .
+@prefix EurosData: <http://www.EurosFile.com/EurosData#> .
+@prefix carbonara: <http://example.egidio.it/carbonara.rdf#> .
+@prefix data-view: <http://www.w3.org/2003/g/data-view#> .
+@prefix datamodel: <http://purl.org/facsimile/datamodel#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@prefix hasMXShop: <http://www.semanticweb.org/simontrussler/ontologies/2021/10/AAV5_rwp#hasMXShop/> .
+@prefix ncbitaxon: <http://purl.obolibrary.org/obo/ncbitaxon#> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix Capability: <http://interlink.soliel.local/entity/Capability#> .
+@prefix annotation: <http://purl.org/ieee1872-owl/annotation#> .
+@prefix astaaktoer: <https://data.digitalarkivet.no/asta/aktoer/> .
+@prefix blue_route: <http://ldf.fi/poi/suomenlinna/blue_route/> .
+@prefix food-upper: <http://w3id.org/food/ontology/disciplinare-upper/> .
+@prefix hasMXShop1: <http://www.semanticweb.org/simontrussler/ontologies/2021/10/AAV7#hasMXShop/> .
+@prefix lcc-3166-1: <https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/> .
+@prefix lcc-3166-2: <https://www.omg.org/spec/LCC/Countries/ISO3166-2-SubdivisionCodes/> .
+@prefix ontologies: <http://www.semanticweb.org/ontologies/> .
+@prefix restaurant: <http://www.univrouen.fr/ontologies/restaurant#> .
+@prefix sap-schema: <http://schema.sap.com/ns/> .
+@prefix ssn-system: <http://www.w3.org/ns/ssn/systems/> .
+@prefix webprotege: <http://webprotege.stanford.edu/> .
+@prefix DigiWindOnt: <http://tuwien.ac.at/digiwind/DigiWindOnt#> .
+@prefix OntoSpecies: <http://www.theworldavatar.com/ontology/ontospecies/OntoSpecies.owl#> .
+@prefix OpenDataCw1: <http://www.semanticweb.org/JiexiLi/ontologies/OpenDataCw1#> .
+@prefix adms-status: <http://www.w3.org/ns/adms/status/> .
+@prefix bettyaktoer: <https://data.digitalarkivet.no/betty/aktoer/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix food-cheese: <http://w3id.org/food/ontology/disciplinare-formaggio/> .
+@prefix l_jatkosota: <http://ldf.fi/narc-luovutetut1939-55/jatkosota/> .
+@prefix l_saksalais: <http://ldf.fi/narc-luovutetut1939-55/saksalais/> .
+@prefix l_talvisota: <http://ldf.fi/narc-luovutetut1939-55/talvisota/> .
+@prefix ml-ontology: <http://www.semanticweb.org/user/ontologies/2020/0/ml-ontology#> .
+@prefix time-schema: <http://www.yso.fi/onto/time-schema#> .
+@prefix bettyuttrekk: <https://data.digitalarkivet.no/betty/uttrekk/> .
+@prefix digiwind_0.1: <http://tuwien.ac.at/digiwind/DigiWindOnt/DigiWind_0.1#> .
+@prefix eaInterlinks: <http://interlink.soliel.local/entity/> .
+@prefix l_miehikkala: <http://ldf.fi/narc-luovutetut1939-55/miehikkala/> .
+@prefix FamilyProject: <http://www.cs.ccsu.edu/~neli/FamilyProject.owl#> .
+@prefix l_internoidut: <http://ldf.fi/narc-luovutetut1939-55/internoidut/> .
+@prefix ServiceOffering: <http://interlink.soliel.local/entity/ServiceOffering#> .
+@prefix bettyinnlevering: <https://data.digitalarkivet.no/betty/innlevering/> .
+@prefix comp6214opendata: <http://www.semanticweb.org/whg04/ontologies/2021/2/comp6214opendata#> .
+@prefix VideoGameOntology: <http://purl.org/net/VideoGameOntology#> .
+@prefix owlready_ontology: <http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#> .
+@prefix simple_measurable: <http://purl.obolibrary.org/obo/planteome/tutorial/simple_measurable/> .
+@prefix standard-pass-ont: <http://www.i2pm.net/standard-pass-ont#> .
+@prefix reaction_mechanism: <http://www.theworldavatar.com/ontology/ontocape/material/substance/reaction_mechanism.owl#> .
+@prefix untitled-ontology-2: <http://www.semanticweb.org/simontrussler/ontologies/2021/10/untitled-ontology-2#> .
+@prefix bettysystemforekomst: <https://data.digitalarkivet.no/betty/systemforekomst/> .
+@prefix untitled-ontology-32: <http://www.semanticweb.org/lien_pa/ontologies/2022/3/untitled-ontology-32#> .
+@prefix GreekTVSeriesOntology: <http://www.semanticweb.org/basil/ontologies/2022/2/GreekTVSeriesOntology#> .
+@prefix Ontology1318785573683: <http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#> .
+@prefix REC-owl-semantics-20040210: <http://www.w3.org/TR/2004/REC-owl-semantics-20040210/#> .
+@prefix chronic-diease-patient-education-ontology: <http://www.semanticweb.org/ontologies/chronic-diease-patient-education-ontology#> .
+@base <http://www.co-ode.org/ontologies/pizza> .
+
+<http://www.co-ode.org/ontologies/pizza> nml:type owl:Ontology ;
+                                         
+                                         rdfs:label "pizza"^^xsd:string ;
+                                         
+                                         owl:versionInfo "2.0"^^xsd:string ;
+                                         
+                                         dct:license "Creative Commons Attribution 3.0 (CC BY 3.0)"^^xsd:string ;
+                                         
+                                         dct:contributor "Nick Drummond" ,
+                                                         "Robert Stevens" ;
+                                         
+                                         dc:description """An ontology about pizzas and their toppings.
+
+This is an example ontology that contains all constructs required for the various versions of the Pizza Tutorial run by Manchester University (see http://owl.cs.manchester.ac.uk/publications/talks-and-tutorials/protg-owl-tutorial)."""@en ;
+                                         
+                                         dct:contributor "Matthew Horridge" ,
+                                                         "Chris Wroe" ,
+                                                         "Alan Rector" ;
+                                         
+                                         dc:title "pizza"@en ;
+                                         
+                                         dct:provenance """v2.0 Added new annotations to the ontology using standard/well-know annotation properties
+
+v1.5. Removed protege.owl import and references. Made ontology URI date-independent
+
+v1.4. Added Food class (used in domain/range of hasIngredient), Added several hasCountryOfOrigin restrictions on pizzas, Made hasTopping invers functional"""@en ;
+                                         
+                                         owl:versionIRI <http://www.co-ode.org/ontologies/pizza/2.0.0> .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+###  http://purl.org/dc/elements/1.1/description
+
+dc:description nml:type owl:AnnotationProperty .
+
+
+
+###  http://purl.org/dc/elements/1.1/title
+
+dc:title nml:type owl:AnnotationProperty .
+
+
+
+###  http://purl.org/dc/terms/contributor
+
+dct:contributor nml:type owl:AnnotationProperty .
+
+
+
+###  http://purl.org/dc/terms/license
+
+dct:license nml:type owl:AnnotationProperty .
+
+
+
+###  http://purl.org/dc/terms/provenance
+
+dct:provenance nml:type owl:AnnotationProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+
+skos:altLabel nml:type owl:AnnotationProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+
+skos:definition nml:type owl:AnnotationProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+
+skos:prefLabel nml:type owl:AnnotationProperty .
+
+
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#hasBase
+
+:hasBase nml:type owl:FunctionalProperty ,
+                  owl:InverseFunctionalProperty ,
+                  owl:ObjectProperty ;
+         
+         rdfs:domain :Pizza ;
+         
+         rdfs:range :PizzaBase ;
+         
+         rdfs:subPropertyOf :hasIngredient ;
+         
+         owl:inverseOf :isBaseOf .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient
+
+:hasIngredient nml:type owl:ObjectProperty ,
+                        owl:TransitiveProperty ;
+               
+               rdfs:comment "NB Transitive - the ingredients of ingredients are ingredients of the whole"@en ;
+               
+               rdfs:domain :Food ;
+               
+               rdfs:range :Food ;
+               
+               owl:inverseOf :isIngredientOf .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping
+
+:hasTopping nml:type owl:InverseFunctionalProperty ,
+                     owl:ObjectProperty ;
+            
+            rdfs:comment "Note that hasTopping is inverse functional because isToppingOf is functional"@en ;
+            
+            rdfs:domain :Pizza ;
+            
+            rdfs:range :PizzaTopping ;
+            
+            rdfs:subPropertyOf :hasIngredient ;
+            
+            owl:inverseOf :isToppingOf .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#isBaseOf
+
+:isBaseOf nml:type owl:FunctionalProperty ,
+                   owl:InverseFunctionalProperty ,
+                   owl:ObjectProperty ;
+          
+          rdfs:subPropertyOf :isIngredientOf .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#isIngredientOf
+
+:isIngredientOf nml:type owl:ObjectProperty ,
+                         owl:TransitiveProperty ;
+                
+                rdfs:comment "The inverse property tree to hasIngredient - all subproperties and attributes of the properties should reflect those under hasIngredient."@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#isToppingOf
+
+:isToppingOf nml:type owl:FunctionalProperty ,
+                      owl:ObjectProperty ;
+             
+             rdfs:comment "Any given instance of topping should only be added to a single pizza (no cheap half-measures on our pizzas)"@en ;
+             
+             rdfs:subPropertyOf :isIngredientOf .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#American
+
+:American nml:type owl:Class ;
+          
+          rdfs:label "American"@en ,
+                     "Americana"@pt ;
+          
+          rdfs:subClassOf :NamedPizza ,
+                          [ nml:type owl:Restriction ;
+                            owl:onProperty :hasTopping ;
+                            owl:someValuesFrom :PeperoniSausageTopping
+                          ] ,
+                          [ nml:type owl:Restriction ;
+                            owl:onProperty :hasTopping ;
+                            owl:someValuesFrom :MozzarellaTopping
+                          ] ,
+                          [ nml:type owl:Restriction ;
+                            owl:onProperty :hasTopping ;
+                            owl:someValuesFrom :TomatoTopping
+                          ] ,
+                          [ nml:type owl:Restriction ;
+                            owl:onProperty :hasTopping ;
+                            owl:allValuesFrom [ nml:type owl:Class ;
+                                                owl:unionOf ( :MozzarellaTopping
+                                                              :PeperoniSausageTopping
+                                                              :TomatoTopping
+                                                            )
+                                              ]
+                          ] ;
+          
+          skos:altLabel "American"@en ;
+          
+          skos:prefLabel "American"@en ;
+          
+          skos:altLabel "American Pizza"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun
+
+:Cajun nml:type owl:Class ;
+       
+       rdfs:label "Cajun"@en ,
+                  "Cajun"@pt ;
+       
+       rdfs:subClassOf :NamedPizza ,
+                       [ nml:type owl:Restriction ;
+                         owl:onProperty :hasTopping ;
+                         owl:someValuesFrom :TomatoTopping
+                       ] ,
+                       [ nml:type owl:Restriction ;
+                         owl:onProperty :hasTopping ;
+                         owl:allValuesFrom [ nml:type owl:Class ;
+                                             owl:unionOf ( :MozzarellaTopping
+                                                           :OnionTopping
+                                                           :TomatoTopping
+                                                         )
+                                           ]
+                       ] ,
+                       [ nml:type owl:Restriction ;
+                         owl:onProperty :hasTopping ;
+                         owl:someValuesFrom :MozzarellaTopping
+                       ] ,
+                       [ nml:type owl:Restriction ;
+                         owl:onProperty :hasTopping ;
+                         owl:someValuesFrom :OnionTopping
+                       ] ;
+       
+       skos:prefLabel "Cajun"@en ;
+       
+       skos:altLabel "Cajun"@en ,
+                     "Cajun Pizza"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa
+
+:Capricciosa nml:type owl:Class ;
+             
+             rdfs:label "Capricciosa"@en ,
+                        "Capricciosa"@pt ;
+             
+             rdfs:subClassOf :NamedPizza ,
+                             [ nml:type owl:Restriction ;
+                               owl:onProperty :hasTopping ;
+                               owl:someValuesFrom :OliveTopping
+                             ] ,
+                             [ nml:type owl:Restriction ;
+                               owl:onProperty :hasTopping ;
+                               owl:someValuesFrom :MozzarellaTopping
+                             ] ,
+                             [ nml:type owl:Restriction ;
+                               owl:onProperty :hasTopping ;
+                               owl:someValuesFrom :TomatoTopping
+                             ] ,
+                             [ nml:type owl:Restriction ;
+                               owl:onProperty :hasTopping ;
+                               owl:someValuesFrom :HamTopping
+                             ] ,
+                             [ nml:type owl:Restriction ;
+                               owl:onProperty :hasTopping ;
+                               owl:allValuesFrom [ nml:type owl:Class ;
+                                                   owl:unionOf ( :HamTopping
+                                                                 :MozzarellaTopping
+                                                                 :OliveTopping
+                                                                 :TomatoTopping
+                                                               )
+                                                 ]
+                             ] ;
+             
+             skos:altLabel "Capricciosa"@en ;
+             
+             skos:prefLabel "Capricciosa"@en ;
+             
+             skos:altLabel "Capricciosa Pizza"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseTopping
+
+:CheeseTopping nml:type owl:Class ;
+               
+               rdfs:label "CheeseTopping"@en ,
+                          "CoberturaDeQueijo"@pt ;
+               
+               rdfs:subClassOf :PizzaTopping ;
+               
+               skos:prefLabel "Cheese"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseyPizza
+
+:CheeseyPizza nml:type owl:Class ;
+              
+              rdfs:label "CheesyPizza"@en ,
+                         "PizzaComQueijo"@pt ;
+              
+              owl:equivalentClass [ nml:type owl:Class ;
+                                    owl:intersectionOf ( :Pizza
+                                                         [ nml:type owl:Restriction ;
+                                                           owl:onProperty :hasTopping ;
+                                                           owl:someValuesFrom :CheeseTopping
+                                                         ]
+                                                       )
+                                  ] ;
+              
+              skos:definition "Any pizza that has at least 1 cheese topping."@en ;
+              
+              skos:prefLabel "Cheesy Pizza"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseyVegetableTopping
+
+:CheeseyVegetableTopping nml:type owl:Class ;
+                         
+                         rdfs:label "CheesyVegetableTopping"@en ,
+                                    "CoberturaDeQueijoComVegetais"@pt ;
+                         
+                         rdfs:subClassOf :CheeseTopping ,
+                                         :VegetableTopping ;
+                         
+                         rdfs:comment "This class will be unsatisfiable. This is because we have given it 2 disjoint parents, which means it could never have any instances (as nothing can be both a CheeseTopping and a VegetableTopping). NB Called ProbeInconsistentTopping in the ProtegeOWL Tutorial."@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#DeepPanBase
+
+:DeepPanBase nml:type owl:Class ;
+             
+             rdfs:label "DeepPanBase"@en ,
+                        "BaseEspessa"@pt ;
+             
+             rdfs:subClassOf :PizzaBase ;
+             
+             owl:disjointWith :ThinAndCrispyBase ;
+             
+             skos:prefLabel "Deep Pan Base"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#DomainConcept
+
+:DomainConcept nml:type owl:Class ;
+               
+               rdfs:label "DomainThing"@en ;
+               
+               owl:disjointWith :ValuePartition ;
+               
+               skos:prefLabel "Domain Thing"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#Fiorentina
+
+:Fiorentina nml:type owl:Class ;
+            
+            rdfs:label "Fiorentina"@en ,
+                       "Fiorentina"@pt ;
+            
+            rdfs:subClassOf :NamedPizza ,
+                            [ nml:type owl:Restriction ;
+                              owl:onProperty :hasTopping ;
+                              owl:someValuesFrom :MozzarellaTopping
+                            ] ,
+                            [ nml:type owl:Restriction ;
+                              owl:onProperty :hasTopping ;
+                              owl:someValuesFrom :OliveTopping
+                            ] ,
+                            [ nml:type owl:Restriction ;
+                              owl:onProperty :hasTopping ;
+                              owl:allValuesFrom [ nml:type owl:Class ;
+                                                  owl:unionOf ( :MozzarellaTopping
+                                                                :OliveTopping
+                                                                :TomatoTopping
+                                                              )
+                                                ]
+                            ] ,
+                            [ nml:type owl:Restriction ;
+                              owl:onProperty :hasTopping ;
+                              owl:someValuesFrom :TomatoTopping
+                            ] ;
+            
+            skos:prefLabel "Fiorentina"@en ;
+            
+            skos:altLabel "Fiorentina"@en ,
+                          "Fiorentina Pizza"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#Food
+
+:Food nml:type owl:Class ;
+      
+      rdfs:label "Food"@en ;
+      
+      rdfs:subClassOf :DomainConcept ;
+      
+      skos:prefLabel "Food"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#Giardiniera
+
+:Giardiniera nml:type owl:Class ;
+             
+             rdfs:label "Giardiniera"@en ,
+                        "Giardiniera"@pt ;
+             
+             rdfs:subClassOf :NamedPizza ,
+                             [ nml:type owl:Restriction ;
+                               owl:onProperty :hasTopping ;
+                               owl:someValuesFrom :MushroomTopping
+                             ] ,
+                             [ nml:type owl:Restriction ;
+                               owl:onProperty :hasTopping ;
+                               owl:allValuesFrom [ nml:type owl:Class ;
+                                                   owl:unionOf ( :MozzarellaTopping
+                                                                 :MushroomTopping
+                                                                 :OliveTopping
+                                                                 :TomatoTopping
+                                                               )
+                                                 ]
+                             ] ,
+                             [ nml:type owl:Restriction ;
+                               owl:onProperty :hasTopping ;
+                               owl:someValuesFrom :MozzarellaTopping
+                             ] ,
+                             [ nml:type owl:Restriction ;
+                               owl:onProperty :hasTopping ;
+                               owl:someValuesFrom :TomatoTopping
+                             ] ,
+                             [ nml:type owl:Restriction ;
+                               owl:onProperty :hasTopping ;
+                               owl:someValuesFrom :OliveTopping
+                             ] ;
+             
+             skos:altLabel "Giardiniera"@en ;
+             
+             skos:prefLabel "Giardiniera"@en ;
+             
+             skos:altLabel "Giardiniera Pizza"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#GreenPepperTopping
+
+:GreenPepperTopping nml:type owl:Class ;
+                    
+                    rdfs:label "GreenPepperTopping"@en ,
+                               "CoberturaDePimentaoVerde"@pt ;
+                    
+                    rdfs:subClassOf :PepperTopping ;
+                    
+                    skos:prefLabel "Green Pepper"@en .
+[ nml:type owl:AllDisjointClasses ;
+  owl:members ( :GreenPepperTopping
+              )
+] .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#HamTopping
+
+:HamTopping nml:type owl:Class ;
+            
+            rdfs:label "HamTopping"@en ,
+                       "CoberturaDePresunto"@pt ;
+            
+            rdfs:subClassOf :MeatTopping ;
+            
+            owl:disjointWith :PeperoniSausageTopping ;
+            
+            skos:prefLabel "Ham"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#HerbSpiceTopping
+
+:HerbSpiceTopping nml:type owl:Class ;
+                  
+                  rdfs:label "HerbSpiceTopping"@en ,
+                             "CoberturaDeErvas"@pt ;
+                  
+                  rdfs:subClassOf :PizzaTopping ;
+                  
+                  skos:prefLabel "Herb Spice"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#InterestingPizza
+
+:InterestingPizza nml:type owl:Class ;
+                  
+                  rdfs:label "InterestingPizza"@en ,
+                             "PizzaInteressante"@pt ;
+                  
+                  owl:equivalentClass [ nml:type owl:Class ;
+                                        owl:intersectionOf ( :Pizza
+                                                             [ nml:type owl:Restriction ;
+                                                               owl:onProperty :hasTopping ;
+                                                               owl:minCardinality "3"^^xsd:nonNegativeInteger
+                                                             ]
+                                                           )
+                                      ] ;
+                  
+                  skos:definition "Any pizza that has at least 3 toppings. Note that this is a cardinality constraint on the hasTopping property and NOT a qualified cardinality constraint (QCR). A QCR would specify from which class the members in this relationship must be. eg has at least 3 toppings from PizzaTopping. This is currently not supported in OWL."@en ;
+                  
+                  skos:prefLabel "Interesting Pizza"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatTopping
+
+:MeatTopping nml:type owl:Class ;
+             
+             rdfs:label "MeatTopping"@en ,
+                        "CoberturaDeCarne"@pt ;
+             
+             rdfs:subClassOf :PizzaTopping ;
+             
+             skos:prefLabel "Meat"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatyPizza
+
+:MeatyPizza nml:type owl:Class ;
+            
+            rdfs:label "MeatyPizza"@en ,
+                       "PizzaDeCarne"@pt ;
+            
+            owl:equivalentClass [ nml:type owl:Class ;
+                                  owl:intersectionOf ( :Pizza
+                                                       [ nml:type owl:Restriction ;
+                                                         owl:onProperty :hasTopping ;
+                                                         owl:someValuesFrom :MeatTopping
+                                                       ]
+                                                     )
+                                ] ;
+            
+            skos:definition "Any pizza that has at least one meat topping"@en ;
+            
+            skos:prefLabel "Meaty Pizza"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#MozzarellaTopping
+
+:MozzarellaTopping nml:type owl:Class ;
+                   
+                   rdfs:label "MozzarellaTopping"@en ,
+                              "CoberturaDeMozzarella"@pt ;
+                   
+                   rdfs:subClassOf :CheeseTopping ;
+                   
+                   skos:prefLabel "Mozzarella"@en .
+[ nml:type owl:AllDisjointClasses ;
+  owl:members ( :MozzarellaTopping
+              )
+] .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#Mushroom
+
+:Mushroom nml:type owl:Class ;
+          
+          rdfs:label "Mushroom"@en ,
+                     "Cogumelo"@pt ;
+          
+          rdfs:subClassOf :NamedPizza ,
+                          [ nml:type owl:Restriction ;
+                            owl:onProperty :hasTopping ;
+                            owl:someValuesFrom :TomatoTopping
+                          ] ,
+                          [ nml:type owl:Restriction ;
+                            owl:onProperty :hasTopping ;
+                            owl:someValuesFrom :MushroomTopping
+                          ] ,
+                          [ nml:type owl:Restriction ;
+                            owl:onProperty :hasTopping ;
+                            owl:someValuesFrom :MozzarellaTopping
+                          ] ,
+                          [ nml:type owl:Restriction ;
+                            owl:onProperty :hasTopping ;
+                            owl:allValuesFrom [ nml:type owl:Class ;
+                                                owl:unionOf ( :MozzarellaTopping
+                                                              :MushroomTopping
+                                                              :TomatoTopping
+                                                            )
+                                              ]
+                          ] ;
+          
+          skos:altLabel "Mushroom"@en ;
+          
+          skos:prefLabel "Mushroom"@en ;
+          
+          skos:altLabel "Mushroom Pizza"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#MushroomTopping
+
+:MushroomTopping nml:type owl:Class ;
+                 
+                 rdfs:label "MushroomTopping"@en ,
+                            "CoberturaDeCogumelo"@pt ;
+                 
+                 rdfs:subClassOf :VegetableTopping ;
+                 
+                 skos:prefLabel "Mushroom"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza
+
+:NamedPizza nml:type owl:Class ;
+            
+            rdfs:label "PizzaComUmNome"@pt ;
+            
+            rdfs:subClassOf :Pizza ;
+            
+            rdfs:comment "A pizza that can be found on a pizza menu"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#NonVegetarianPizza
+
+:NonVegetarianPizza nml:type owl:Class ;
+                    
+                    rdfs:label "NonVegetarianPizza"@en ,
+                               "PizzaNaoVegetariana"@pt ;
+                    
+                    owl:equivalentClass [ nml:type owl:Class ;
+                                          owl:intersectionOf ( :Pizza
+                                                               [ nml:type owl:Class ;
+                                                                 owl:complementOf :VegetarianPizza
+                                                               ]
+                                                             )
+                                        ] ;
+                    
+                    owl:disjointWith :VegetarianPizza ;
+                    
+                    skos:definition "Any Pizza that is not a VegetarianPizza"@en ;
+                    
+                    skos:prefLabel "Non Vegetarian Pizza"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#OliveTopping
+
+:OliveTopping nml:type owl:Class ;
+              
+              rdfs:label "OliveTopping"@en ,
+                         "CoberturaDeAzeitona"@pt ;
+              
+              rdfs:subClassOf :VegetableTopping ;
+              
+              skos:prefLabel "Olive"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#OnionTopping
+
+:OnionTopping nml:type owl:Class ;
+              
+              rdfs:label "OnionTopping"@en ,
+                         "CoberturaDeCebola"@pt ;
+              
+              rdfs:subClassOf :VegetableTopping ;
+              
+              skos:prefLabel "Onion"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#Parmense
+
+:Parmense nml:type owl:Class ;
+          
+          rdfs:label "Parmense"@en ,
+                     "Parmense"@pt ;
+          
+          rdfs:subClassOf :NamedPizza ,
+                          [ nml:type owl:Restriction ;
+                            owl:onProperty :hasTopping ;
+                            owl:someValuesFrom :TomatoTopping
+                          ] ,
+                          [ nml:type owl:Restriction ;
+                            owl:onProperty :hasTopping ;
+                            owl:allValuesFrom [ nml:type owl:Class ;
+                                                owl:unionOf ( :HamTopping
+                                                              :MozzarellaTopping
+                                                              :TomatoTopping
+                                                            )
+                                              ]
+                          ] ,
+                          [ nml:type owl:Restriction ;
+                            owl:onProperty :hasTopping ;
+                            owl:someValuesFrom :MozzarellaTopping
+                          ] ,
+                          [ nml:type owl:Restriction ;
+                            owl:onProperty :hasTopping ;
+                            owl:someValuesFrom :HamTopping
+                          ] ;
+          
+          skos:prefLabel "Parmense"@en ;
+          
+          skos:altLabel "Parmese"@en ,
+                        "Parmese Pizza"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#PeperoniSausageTopping
+
+:PeperoniSausageTopping nml:type owl:Class ;
+                        
+                        rdfs:label "PeperoniSausageTopping"@en ,
+                                   "CoberturaDeCalabreza"@pt ;
+                        
+                        rdfs:subClassOf :MeatTopping ;
+                        
+                        skos:prefLabel "Peperoni Sausage"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#PepperTopping
+
+:PepperTopping nml:type owl:Class ;
+               
+               rdfs:label "PepperTopping"@en ,
+                          "CoberturaDePimentao"@pt ;
+               
+               rdfs:subClassOf :VegetableTopping ;
+               
+               skos:prefLabel "Pepper"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza
+
+:Pizza nml:type owl:Class ;
+       
+       rdfs:label "Pizza"@en ;
+       
+       rdfs:subClassOf :Food ,
+                       [ nml:type owl:Restriction ;
+                         owl:onProperty :hasBase ;
+                         owl:someValuesFrom :PizzaBase
+                       ] ;
+       
+       skos:prefLabel "Pizza"@en ;
+       
+       rdfs:seeAlso <https://en.wikipedia.org/wiki/Pizza> .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaBase
+
+:PizzaBase nml:type owl:Class ;
+           
+           rdfs:label "PizzaBase"@en ,
+                      "BaseDaPizza"@pt ;
+           
+           rdfs:subClassOf :Food ;
+           
+           skos:prefLabel "Pizza Base"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaTopping
+
+:PizzaTopping nml:type owl:Class ;
+              
+              rdfs:label "PizzaTopping"@en ,
+                         "CoberturaDaPizza"@pt ;
+              
+              rdfs:subClassOf :Food ;
+              
+              skos:prefLabel "Pizza Topping"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#Rosa
+
+:Rosa nml:type owl:Class ;
+      
+      rdfs:label "Rosa"@en ,
+                 "Rosa"@pt ;
+      
+      rdfs:subClassOf :NamedPizza ,
+                      [ nml:type owl:Restriction ;
+                        owl:onProperty :hasTopping ;
+                        owl:someValuesFrom :TomatoTopping
+                      ] ,
+                      [ nml:type owl:Restriction ;
+                        owl:onProperty :hasTopping ;
+                        owl:someValuesFrom :MozzarellaTopping
+                      ] ,
+                      [ nml:type owl:Restriction ;
+                        owl:onProperty :hasTopping ;
+                        owl:allValuesFrom [ nml:type owl:Class ;
+                                            owl:unionOf ( :MozzarellaTopping
+                                                          :TomatoTopping
+                                                        )
+                                          ]
+                      ] ;
+      
+      skos:altLabel "Rosa"@en ;
+      
+      skos:prefLabel "Rosa"@en ;
+      
+      skos:altLabel "Rosa Pizza"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#SauceTopping
+
+:SauceTopping nml:type owl:Class ;
+              
+              rdfs:label "SauceTopping"@en ,
+                         "CoberturaEmMolho"@pt ;
+              
+              rdfs:subClassOf :PizzaTopping ;
+              
+              skos:prefLabel "Sauce"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#ThinAndCrispyBase
+
+:ThinAndCrispyBase nml:type owl:Class ;
+                   
+                   rdfs:label "ThinAndCrispyBase"@en ,
+                              "BaseFinaEQuebradica"@pt ;
+                   
+                   rdfs:subClassOf :PizzaBase ;
+                   
+                   skos:prefLabel "Thin And Crispy Base"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#ThinAndCrispyPizza
+
+:ThinAndCrispyPizza nml:type owl:Class ;
+                    
+                    rdfs:label "ThinAndCrispyPizza"@en ;
+                    
+                    owl:equivalentClass [ nml:type owl:Class ;
+                                          owl:intersectionOf ( :Pizza
+                                                               [ nml:type owl:Restriction ;
+                                                                 owl:onProperty :hasBase ;
+                                                                 owl:allValuesFrom :ThinAndCrispyBase
+                                                               ]
+                                                             )
+                                        ] ;
+                    
+                    skos:prefLabel "Thin And Crispy Pizza"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#TomatoTopping
+
+:TomatoTopping nml:type owl:Class ;
+               
+               rdfs:label "TomatoTopping"@en ,
+                          "CoberturaDeTomate"@pt ;
+               
+               rdfs:subClassOf :VegetableTopping ;
+               
+               skos:prefLabel "Tomato"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#UnclosedPizza
+
+:UnclosedPizza nml:type owl:Class ;
+               
+               rdfs:label "UnclosedPizza"@en ,
+                          "PizzaAberta"@pt ;
+               
+               rdfs:subClassOf :Pizza ,
+                               [ nml:type owl:Restriction ;
+                                 owl:onProperty :hasTopping ;
+                                 owl:someValuesFrom :MozzarellaTopping
+                               ] ;
+               
+               rdfs:comment "An unclosed Pizza cannot be inferred to be either a VegetarianPizza or a NonVegetarianPizza, because it might have other toppings."^^xsd:string ;
+               
+               skos:prefLabel "Unclosed Pizza"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#ValuePartition
+
+:ValuePartition nml:type owl:Class ;
+                
+                rdfs:label "ValuePartition"@en ,
+                           "ValorDaParticao"@pt ;
+                
+                rdfs:comment "A ValuePartition is a pattern that describes a restricted set of classes from which a property can be associated. The parent class is used in restrictions, and the covering axiom means that only members of the subclasses may be used as values. The possible subclasses cannot be extended without updating the ValuePartition class."^^xsd:string ;
+                
+                skos:prefLabel "Value Partition"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetableTopping
+
+:VegetableTopping nml:type owl:Class ;
+                  
+                  rdfs:label "VegetableTopping"@en ,
+                             "CoberturaDeVegetais"@pt ;
+                  
+                  rdfs:subClassOf :PizzaTopping ;
+                  
+                  skos:prefLabel "Vegetable Topping"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianPizza
+
+:VegetarianPizza nml:type owl:Class ;
+                 
+                 rdfs:label "VegetarianPizza"@en ,
+                            "PizzaVegetariana"@pt ;
+                 
+                 owl:equivalentClass [ nml:type owl:Class ;
+                                       owl:intersectionOf ( :Pizza
+                                                            [ nml:type owl:Class ;
+                                                              owl:complementOf [ nml:type owl:Restriction ;
+                                                                                 owl:onProperty :hasTopping ;
+                                                                                 owl:someValuesFrom :MeatTopping
+                                                                               ]
+                                                            ]
+                                                          )
+                                     ] ;
+                 
+                 skos:definition "Any pizza that does not have fish topping and does not have meat topping is a VegetarianPizza. Note that instances of this class do not need to have any toppings at all."@en ;
+                 
+                 skos:prefLabel "Vegetarian Pizza"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianPizzaEquivalent1
+
+:VegetarianPizzaEquivalent1 nml:type owl:Class ;
+                            
+                            rdfs:label "VegetarianPizza1"@en ,
+                                       "PizzaVegetarianaEquivalente1"@pt ;
+                            
+                            owl:equivalentClass [ nml:type owl:Class ;
+                                                  owl:intersectionOf ( :Pizza
+                                                                       [ nml:type owl:Restriction ;
+                                                                         owl:onProperty :hasTopping ;
+                                                                         owl:allValuesFrom :VegetarianTopping
+                                                                       ]
+                                                                     )
+                                                ] ;
+                            
+                            rdfs:comment "Any pizza that only has vegetarian toppings or no toppings is a VegetarianPizzaEquiv1. Should be inferred to be equivalent to VegetarianPizzaEquiv2.  Not equivalent to VegetarianPizza because PizzaTopping is not covering"@en ;
+                            
+                            skos:prefLabel "Vegetarian Pizza1"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianPizzaEquivalent2
+
+:VegetarianPizzaEquivalent2 nml:type owl:Class ;
+                            
+                            rdfs:label "VegetarianPizza2"@en ,
+                                       "PizzaVegetarianaEquivalente2"@pt ;
+                            
+                            owl:equivalentClass [ nml:type owl:Class ;
+                                                  owl:intersectionOf ( :Pizza
+                                                                       [ nml:type owl:Restriction ;
+                                                                         owl:onProperty :hasTopping ;
+                                                                         owl:allValuesFrom [ nml:type owl:Class ;
+                                                                                             owl:unionOf ( :CheeseTopping
+                                                                                                           :HerbSpiceTopping
+                                                                                                           :SauceTopping
+                                                                                                           :VegetableTopping
+                                                                                                         )
+                                                                                           ]
+                                                                       ]
+                                                                     )
+                                                ] ;
+                            
+                            rdfs:comment "An alternative to VegetarianPizzaEquiv1 that does not require a definition of VegetarianTopping. Perhaps more difficult to maintain. Not equivalent to VegetarianPizza"@en ;
+                            
+                            skos:prefLabel "Vegetarian Pizza2"@en .
+
+
+
+###  http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianTopping
+
+:VegetarianTopping nml:type owl:Class ;
+                   
+                   rdfs:label "VegetarianTopping"@en ,
+                              "CoberturaVegetariana"@pt ;
+                   
+                   owl:equivalentClass [ nml:type owl:Class ;
+                                         owl:intersectionOf ( :PizzaTopping
+                                                              [ nml:type owl:Class ;
+                                                                owl:unionOf ( :CheeseTopping
+                                                                              :HerbSpiceTopping
+                                                                              :SauceTopping
+                                                                              :VegetableTopping
+                                                                            )
+                                                              ]
+                                                            )
+                                       ] ;
+                   
+                   rdfs:comment "An example of a covering axiom. VegetarianTopping is equivalent to the union of all toppings in the given axiom. VegetarianToppings can only be Cheese or Vegetable or....etc."@en ;
+                   
+                   skos:prefLabel "Vegetarian Topping"@en .
+
+
+
+
+
+#################################################################
+#
+#    General axioms
+#
+#################################################################
+
+
+[ nml:type owl:AllDisjointClasses ;
+  owl:members ( :Pizza
+                :PizzaBase
+                :PizzaTopping
+              )
+] .
+[ nml:type owl:AllDisjointClasses ;
+  owl:members ( :MushroomTopping
+                :OliveTopping
+                :OnionTopping
+                :PepperTopping
+                :TomatoTopping
+              )
+] .
+[ nml:type owl:AllDisjointClasses ;
+  owl:members ( :American
+                :Cajun
+                :Capricciosa
+                :Fiorentina
+                :Giardiniera
+                :Mushroom
+                :Parmense
+                :Rosa
+                :UnclosedPizza
+              )
+] .
+[ nml:type owl:AllDisjointClasses ;
+  owl:members ( :CheeseTopping
+                :HerbSpiceTopping
+                :MeatTopping
+                :SauceTopping
+                :VegetableTopping
+              )
+] .
+
+
+
+
+###  Generated by the OWL API (version 3.4.5-SNAPSHOT) http://owlapi.sourceforge.net
+

@@ -1,19 +1,19 @@
 #/usr/bin/env bash
 
-# run_pizza.sh
-# input: pizza.owl
-# output:pizza.json
-
+# run_tiny_pizza.sh
+# input: tiny_pizza.owl
+# output: tiny_pizza_on_fhir.json
+ 
 java -jar target/fhir-owl-1.1.0.jar \
-    -i src/test/resources/pizza.owl \
-    -o pizza.json \
-    -id pizza \
-    -name "Pizza Ontology" \
-    -mainNs http://www.co-ode.org/ontologies/pizza/pizza \
+    -i src/test/resources/tiny_pizza.owl \
+    -o tiny_pizza_on_fhir.json \
+    -id tiny_pizza \
+    -name "Tiny Pizza Ontology" \
+    -mainNs http://www.co-ode.org/ontologies/pizza/tiny_pizza \
     -status active \
     -codeReplace "_,:" \
     -s http://www.geneontology.org/formats/oboInOwl#hasExactSynonym \
-  -t "pizza   Ontology" \
+  -t "tiny pizza   Ontology" \
   -content complete \
   -descriptionProp http://purl.org/dc/elements/1.1/subject \
   -useFhirExtension \
