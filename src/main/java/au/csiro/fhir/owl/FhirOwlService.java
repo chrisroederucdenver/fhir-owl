@@ -197,7 +197,14 @@ public class FhirOwlService {
     log.info("Loading ontology from file " + input.getAbsolutePath());
     OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
     addIriMappings(manager);
-    final OWLOntology rootOnt = manager.loadOntologyFromOntologyDocument(input);
+    final OWLOntology rootOnt;
+    try {
+       rootOnt = manager.loadOntologyFromOntologyDocument(input);
+    }
+    catch(Exception e) {
+        System.out.println("NOT FOUND: " + input);
+        throw e;
+    }
     
     // We only need the preferred term property here
     final OWLDataFactory factory = manager.getOWLDataFactory();
