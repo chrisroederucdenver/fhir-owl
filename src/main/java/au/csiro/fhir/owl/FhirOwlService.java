@@ -22,6 +22,9 @@ import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 import java.util.stream.Collectors;
 
+import java.net.URL;
+import java.net.URLClassLoader;
+
 import javax.annotation.PostConstruct;
 
 import org.apache.commons.logging.Log;
@@ -53,6 +56,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import uk.ac.manchester.cs.jfact.JFactFactory;
+
+import org.springframework.util.ResourceUtils;
 
 /**
  * Main service.
@@ -91,6 +96,9 @@ public class FhirOwlService {
       if (input == null) {
         log.info("Did not find iri_mappings.txt in classpath.");
         return;
+      } else {
+        URL url = FhirContext.class.getClassLoader().getResource("iri_mappings.txt");
+        log.info("must have found iri_mappings.txt in classpath...." + url);
       }
       
       final String[] lines = getLinesFromInputStream(input);
@@ -101,12 +109,22 @@ public class FhirOwlService {
         String[] parts = line.split("[,]");
         
         // Check file exists
-        final File tgtFile = new File(System.getProperty("user.home") + parts[1]);
+        final File tgtFile;
+	try {
+       	    tgtFile = new File(System.getProperty("user.home") + parts[1]);
+	}
+	catch (Exception x) {
+            log.error("Mapping file not parsed right: \"" + line + "\"");
+	    throw(x);
+        }	
         if (tgtFile.exists()) {
           iriMap.put(IRI.create(parts[0]), IRI.create(tgtFile));
           log.info("Adding mapping " + parts[0] + " -> " +  tgtFile.toString());
         } else {
           log.warn("Mapping was not added because file " +  tgtFile.toString() + " does not exist.");
+          log.info("...details home:" + System.getProperty("user.home") + " file:" +  parts[1]);
+          log.info("...edit the iri_mappings.txt file to accurately locate these files.");
+          log.info("...location of iri_mappings.txt should be in classpath. A copy exists at src/main/resources/iri_mappings.txt.");
         }
       }
       
