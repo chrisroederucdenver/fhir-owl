@@ -15,6 +15,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.util.*;
 import java.util.regex.Matcher;
@@ -92,23 +93,37 @@ public class FhirOwlService {
     log.info("Checking for IRI mappings in home directory " + System.getProperty("user.home"));
     InputStream input;
     try {
-      input = FhirContext.class.getClassLoader().getResourceAsStream("iri_mappings.txt");
-      if (input == null) {
-        log.info("Did not find iri_mappings.txt in classpath.");
-        return;
-      } else {
-        URL url = FhirContext.class.getClassLoader().getResource("iri_mappings.txt");
-        log.info("must have found iri_mappings.txt in classpath...." + url);
+      String userDirPath = System.getProperty("user.dir") + "/iri_mappings.txt";
+      String userHomePath = System.getProperty("user.home") + "/iri_mappings.txt";
+      File mappingFile = new File(userDirPath);
+      if (!mappingFile.exists()) {
+        mappingFile = new File(userHomePath);
       }
-      
+      if (mappingFile.exists()) {
+	input = new FileInputStream(mappingFile);
+	log.info("Found IRI mappings at:" + mappingFile.getAbsolutePath());
+      }
+      else {
+	log.info("not found in " + userHomePath);
+        input = FhirContext.class.getClassLoader().getResourceAsStream("iri_mappings.txt");
+        if (input != null) {
+          log.warn("Found IRI mappings in the jar. They may not be appropriate here.");
+	}
+      }
+
+      if (input == null) {
+        log.info("Did not find iri_mappings.txt in " + userDirPath + " or " + userHomePath + " or in the jar.");
+        return;
+      } 
+     
       final String[] lines = getLinesFromInputStream(input);
       for (String line : lines) {
-        if (line.startsWith("#")) {
+        if (line.startsWith("#") || line.trim().length() ==0) {
           continue;
         }
         String[] parts = line.split("[,]");
         
-        // Check file exists
+        // Check file exists 
         final File tgtFile;
 	try {
        	    tgtFile = new File(System.getProperty("user.home") + parts[1]);
